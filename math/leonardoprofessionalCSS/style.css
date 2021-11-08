@@ -1,0 +1,96 @@
+﻿body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6em;
+  width: 100%;
+  margin: auto;
+  text-decoration: none;
+}
+
+.Header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #f3141467;
+  position: fixed;
+  right: 0;
+  left: 0;
+  height: 75px;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2);
+}
+
+.navButton {
+  padding: 12px 24px;
+  font-family: Arial;
+}
+
+.navButton:hover {
+  box-shadow: inset 0px 0px 15px 3px #c01a1a4d;
+  background: linear-gradient(to bottom, #f3141448 5%, #e6212167 100%);
+  background-color: #f3141443;
+  display: inline-block;
+  cursor: pointer;
+  color: black;
+  font-family: Arial;
+  padding: 12px 24px;
+  text-decoration: none;
+  text-shadow: 0px 1px 2px #df202067;
+}
+
+.navButton:active {
+  position: relative;
+  top: 1px;
+}
+
+.Header a {
+  text-decoration: none;
+  color: black;
+}
+
+.btn-primary {
+  font-size: 16px;
+  background: black;
+  padding: 1rem 1rem;
+  cursor: pointer;
+}
+
+.btn-primary a:visited {
+  color: white;
+}
+
+.btn-primary:hover {
+  background-image: url("../leonardoprofessionalPictures/red-blue.PNG");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.mainPage {
+  padding-top: 80px;
+  display: flex;
+  height: 500px;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: none;
+  right: 0;
+  left: 0;
+  background-image: url("../leonardoprofessionalPictures/red-background.jpg");
+}
+
+.picture {
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+  background: rgba(178, 34, 34, 0.741);
+  width: 200px;
+  height: 300px;
+  text-align: center;
+  vertical-align: center;
+  border-radius: 15px;
+}
+
+.bio {
+  text-align: center;
+  vertical-align: middle;
+  width: 400px;
+  color: rgb(22, 0, 0);
+  background: rgba(178, 34, 34, 0.864);
+  border-radius: 15px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+}
