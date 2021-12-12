@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta name="description" content="circuit analysis" />
+    <title>circuit analysis</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../leonardoprofessionalCSS/lessonStyle.css"
+    />
+  </head>
+  <body>
+    <div class="Header">
+      <img
+        src="../leonardoprofessionalPictures/logo.PNG"
+        alt="logo"
+        style="width: 300px; height: 75px"
+      />
+      <div>
+        <a class="navButton" href="../index.html"><b>home</b></a>
+      </div>
+      <div>
+        <a class="navButton" href="../math.html"><b> math </b></a>
+      </div>
+      <div>
+        <a class="navButton" href="../engineering.html"><b> engineering </b></a>
+      </div>
+      <div>
+        <a class="navButton" href="../coding.html"><b> coding </b></a>
+      </div>
+      <div>
+        <button class="btn-primary">
+          <a href="#"><b> contact me </b></a>
+        </button>
+      </div>
+    </div>
+
+    <div class="mainPage">
+      <h1>Intro to circuit analysis</h1>
+
+      <div class="blogBoxB">
+        <div class="article">
+          <h1>5 basic componants</h1>
+
+          <p>Resistor: Units = Ohms, Variable = R</p>
+          <p>Voltage source: units = Volts, Variable = V</p>
+          <p>Current source: units = Amps, Variable = I</p>
+          <p>Capacitor: units = Farad, Variable = C</p>
+          <p>Inductor: units = Henry, Variable = L</p>
+        </div>
+        <div class="detail">
+          <h3>schematic symbol</h3>
+
+          <img
+            src="../leonardoprofessionalPictures/resistor.PNG"
+            height="150px"
+            width="150px"
+          />
+          <p>resistor</p>
+
+          <img
+            src="../leonardoprofessionalPictures/inductor.PNG"
+            height="150px"
+            width="150px"
+          />
+          <p>inductor</p>
+
+          <img
+            src="../leonardoprofessionalPictures/current source.PNG"
+            height="150px"
+            width="150px"
+          />
+          <p>current source</p>
+        </div>
+        <div class="detail">
+          <h3>schematic symbol</h3>
+
+          <img
+            src="../leonardoprofessionalPictures/capacitor.PNG"
+            height="150px"
+            width="150px"
+          />
+          <p>capacitor</p>
+
+          <img
+            src="../leonardoprofessionalPictures/voltSource.PNG"
+            height="150px"
+            width="150px"
+          />
+          <p>voltage source</p>
+        </div>
+      </div>
+
+      <div class="blogBoxB">
+        <div class="article">
+          <h1>Connection Types</h1>
+
+          <p>There are two types of connections between componants</p>
+          <ol>
+            <li>Series</li>
+            <li>Parallel</li>
+          </ol>
+
+          <p>
+            When connected in series the end of one componant is connected to
+            the front of the other
+          </p>
+          <p>
+            In parallel connection the fronts and the backs of each componant is
+            connected
+          </p>
+        </div>
+
+        <div class="detail">
+          <h3>schematic connections</h3>
+
+          <img
+            src="../leonardoprofessionalPictures/seriesConnection.PNG"
+            height="150px"
+            width="150px"
+          />
+          <p>Series Connection</p>
+
+          <img
+            src="../leonardoprofessionalPictures/parallelConnection.PNG"
+            height="150px"
+            width="150px"
+          />
+          <p>Parallel Connection</p>
+        </div>
+      </div>
+
+      <div class="blogBoxB">
+        <div class="article">
+          <h1>Ohms law</h1>
+
+          <p>the three setups for ohms law</p>
+          <ol>
+            <li>V = IR</li>
+            <li>R = V/I</li>
+            <li>I = V/R</li>
+          </ol>
+          <p>
+            This is the most basic and fundimental equation of electrical
+            engineering.
+          </p>
+          <p>Lets look at our first practice problem</p>
+        </div>
+
+        <div class="detail">
+          <h3>schematic</h3>
+
+          <img
+            src="../leonardoprofessionalPictures/VRCircuit.PNG"
+            height="150px"
+            width="150px"
+          />
+        </div>
+      </div>
+
+      <div class="blogBoxB">
+        <div class="article">
+          <h1>First question</h1>
+
+          <img
+            src="../leonardoprofessionalPictures/VRCircuit.PNG"
+            height="150px"
+            width="150px"
+          />
+
+          <p>Here is a 10V Voltage source connected to a 5 Ohm Resistor</p>
+          <p>If we know V=10 and R=5 then what is I?</p>
+        </div>
+
+        <div class="detail">
+          <h3>Solution</h3>
+
+          <p>We see above I = V/R</p>
+          <p>plugging this is we get</p>
+          <p>I = 10/5 = 2 Amps</p>
+        </div>
+      </div>
+
+      <div class="blogBoxB">
+        <div class="article">
+          <h1>Adding Resistors Series</h1>
+
+          <img
+            src="../leonardoprofessionalPictures/addResistors.PNG"
+            height="150px"
+            width="150px"
+          />
+
+          <p>Now we have two 5 Ohm resistors connected in series</p>
+          <p>When adding resistors in series the equation is simply</p>
+          <p>R1 + R2 = Rt, Rt = total resistance</p>
+        </div>
+
+        <div class="detail">
+          <h3>Solution</h3>
+
+          <p>plugging into R1 + R2 = Rt</p>
+          <p>5 + 5 = 10 Ohms</p>
+          <p>Lets find current</p>
+          <p>I = 10/10 = 1 Amp</p>
+        </div>
+      </div>
+
+      <div class="blogBoxB">
+        <div class="article">
+          <h1>Adding Resistors Parallel</h1>
+
+          <img
+            src="../leonardoprofessionalPictures/addResistorsParallel.PNG"
+            height="150px"
+            width="150px"
+          />
+
+          <p>Now we have two 5 Ohm resistors connected in parallel</p>
+          <p>When adding resistors in parallel we use the equation</p>
+          <p>(1/R1 + 1/R2)^-1 = Rt, Rt = total resistance</p>
+        </div>
+
+        <div class="detail">
+          <h3>Solution</h3>
+
+          <p>plugging into (1/R1 + 1/R2)^-1 = Rt</p>
+          <p>(1/5 + 1/5)^-1 =</p>
+          <p>(2/5)^-1 = 5/2 = 2.5</p>
+          <p>Lets find current</p>
+          <p>I = 10/2.5 = 4 Amps</p>
+        </div>
+      </div>
+
+      <div class="blogBoxB">
+        <div class="article">
+          <h1>Voltage divider</h1>
+
+          <img
+            src="../leonardoprofessionalPictures/voltage divider.PNG"
+            height="150px"
+            width="150px"
+          />
+
+          <p>a voltage divider is two resistors connected in series.</p>
+          <p>we are going to be looking for the voltage across R2</p>
+          <p>
+            to find the voltage across a resistor we must first know the current
+            going through it
+          </p>
+          <p>but first to find current we need to find Rt</p>
+          <p>Once we have the current we can use Ohms law V = IR2</p>
+        </div>
+
+        <div class="detail">
+          <h3>Solution</h3>
+
+          <p>plugging into R1 + R2 = Rt</p>
+          <p>2 + 3 = 5 Ohms</p>
+          <p>I = 10/5 = 2 Amps</p>
+          <p>finding V2</p>
+          <p>V2 = (2)(2) = 4 Volts</p>
+          <p>you try finding V1</p>
+        </div>
+      </div>
+
+      <div class="blogBoxB">
+        <div class="article">
+          <h1>Current divider</h1>
+
+          <img
+            src="../leonardoprofessionalPictures/voltage divider.PNG"
+            height="150px"
+            width="150px"
+          />
+
+          <p>a voltage divider is two resistors connected in series.</p>
+          <p>we are going to be looking for the voltage across R2</p>
+          <p>
+            to find the voltage across a resistor we must first know the current
+            going through it
+          </p>
+          <p>but first to find current we need to find Rt</p>
+          <p>Once we have the current we can use Ohms law V = IR2</p>
+        </div>
+
+        <div class="detail">
+          <h3>Solution</h3>
+
+          <p>plugging into R1 + R2 = Rt</p>
+          <p>2 + 3 = 5 Ohms</p>
+          <p>I = 10/5 = 2 Amps</p>
+          <p>finding V2</p>
+          <p>V2 = (2)(2) = 4 Volts</p>
+          <p>you try finding V1</p>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+    </footer>
+  </body>
+</html>

@@ -1,9 +1,9 @@
 ﻿body {
-  font-family: Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   line-height: 1.6em;
   width: 100%;
   margin: auto;
-  text-decoration: none;
 }
 
 .Header {
@@ -65,32 +65,40 @@
 
 .mainPage {
   padding-top: 80px;
+  background-image: url("../leonardoprofessionalPictures/red-background.jpg");
   display: flex;
-  height: 500px;
+  flex-direction: column;
+  grid-gap: 3px;
   justify-content: space-evenly;
   align-items: center;
-  margin: none;
-  right: 0;
-  left: 0;
-  background-image: url("../leonardoprofessionalPictures/red-background.jpg");
 }
 
-.picture {
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
-  background: rgba(178, 34, 34, 0.741);
-  width: 200px;
-  height: 300px;
-  text-align: center;
-  vertical-align: center;
+.blogBoxB {
+  color: black;
+  background: white;
+  width: 80%;
   border-radius: 15px;
+  box-shadow: inset -20px -20px 20px 0px lightblue;
+  display: flex;
+  justify-content: space-evenly;
 }
 
-.bio {
-  text-align: center;
-  vertical-align: middle;
-  width: 400px;
-  color: rgb(22, 0, 0);
-  background: rgba(178, 34, 34, 0.864);
+.Box {
+  color: black;
+  background: white;
+  width: 80%;
   border-radius: 15px;
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+  box-shadow: inset -20px -20px 20px 0px lightblue;
+}
+
+.detail {
+  width: 150px;
+}
+
+.clr {
+  clear: both;
+}
+
+.footer {
+  background: blue;
 }
