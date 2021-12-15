@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta name="description" content="circuit analysis" />
+    <title>circuit analysis</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../leonardoprofessionalCSS/lessonStyle.css"
+    />
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?lang=ruby&amp;skin=sons-of-obsidian"></script>
+  </head>
+  <body>
+    <div class="Header">
+      <img
+        src="../leonardoprofessionalPictures/logo.PNG"
+        alt="logo"
+        style="width: 300px; height: 75px"
+      />
+      <div>
+        <a class="navButton" href="../index.html"><b>home</b></a>
+      </div>
+      <div>
+        <a class="navButton" href="../math.html"><b> math </b></a>
+      </div>
+      <div>
+        <a class="navButton" href="../engineering.html"><b> engineering </b></a>
+      </div>
+      <div>
+        <a class="navButton" href="../coding.html"><b> coding </b></a>
+      </div>
+      <div>
+        <button class="btn-primary">
+          <a href="#"><b> contact me </b></a>
+        </button>
+      </div>
+    </div>
+
+    <div class="mainPage">
+      <h1>HTML Lesson 1</h1>
+
+      <div class="Box">
+        <div class="lessonArticle">
+          <h1>HTML Set up</h1>
+
+          <?prettify linenums=1?>
+          <pre class="prettyprint">
+       
+              &lt!DOCTYPE html&gt
+              &lthtml&gt
+              &lthead&gt
+                  &lttitle&gtPage Title&lt/title&gt
+              &lt/head&gt
+              &ltbody&gt
+                  
+              &lt/body&gt
+              &lt/html&gt
+
+          </pre>
+          <p>
+            Above is the basic set up for a HTML document. Most of what you can
+            see are called <strong>Tags</strong> and we will be taking a closer
+            look at what they do below.
+          </p>
+        </div>
+      </div>
+
+      <div class="Box">
+        <div class="lessonArticle">
+          <h1>HTML Tags</h1>
+
+          <?prettify linenums=1?>
+          <pre class="prettyprint">
+              &lt!DOCTYPE html&gt
+              &lthtml&gt
+
+              &lt/html&gt
+          </pre>
+
+          <p>
+            On the first line we can see the HTML document type declaration.
+            This is not technically a tag, however, it is similar. all HTML
+            documants must have this.
+          </p>
+          <p>
+            Next we have the <strong>Opening Tag</strong> for our
+            <strong>HTML Tag</strong>. This is then followed by the
+            <strong>Closing Tag</strong>. The closing can be distinguished by
+            the forward slash '/'.
+          </p>
+          <p>
+            Most tags will be made up of an opening tag and a closing tag (kinda
+            confusing sometimes because 1 tag is made up of 2 tags but please
+            just work with me). however, there are some exceptions to every
+            rule, such as the image tag but we will get to that later.
+          </p>
+        </div>
+      </div>
+
+      <div class="Box">
+        <div class="lessonArticle">
+          <h1>More Tags</h1>
+
+          <?prettify linenums=1?>
+          <pre class="prettyprint">
+       
+              &lt!DOCTYPE html&gt
+              &lthtml&gt
+              &lthead&gt
+                  &lttitle&gtPage Title&lt/title&gt
+              &lt/head&gt
+              &ltbody&gt
+                  
+              &lt/body&gt
+              &lt/html&gt
+
+          </pre>
+          <p>
+            Back to where we began. The rest of the tags have been returned.
+            Lets take a closer at the meaning of each tag and how they are
+            postioned.
+          </p>
+          <p>
+            The first new tag we see is the <strong>header opening tag</strong>.
+            the header is being opened after the HTML opening tag but before the
+            clasing html tag. This means the header tag is
+            <strong>inside</strong> of the html tag. This then means the header
+            tag must close before the html tag.
+          </p>
+          <p>
+            Next we see the title tag inside of the header tag, which we of
+            course know means it must close before the header tag. Inside of the
+            title tag we see the text "Page Title", this is of course to
+            represent the title of the page you are creating. I think a good
+            title for this page would be "HTML Lesson 1", so lets change it
+          </p>
+          <?prettify linenums=5?>
+          <pre class="prettyprint">&lttitle&gtHTML Lesson 1&lt/title&gt </pre>
+          <p>
+            Rock and roll! we also closed the title tag on the same line. Then
+            above you see we closed the header tag. Now something imporant about
+            the header tag is that nothing inside of the header is immediatly
+            visable on the webpage. This is where the
+            <strong>body tag</strong> comes into play.
+          </p>
+        </div>
+      </div>
+
+      <div class="Box">
+        <div class="lessonArticle">
+          <h1>body Tags</h1>
+
+          <?prettify linenums=7?>
+          <pre class="prettyprint">
+              &ltbody&gt
+                This is where the fun begins
+              &lt/body&gt
+              &lt/html&gt
+          </pre>
+
+          <p>
+            Here we have the body tag and I have added some text inside. This
+            text would show up immediatly on the web page since it is inside of
+            the body tag. We then of course close the body tag before the html
+            tag and our first web page is finished. Try making a file using what
+            we learned here and open it with your web browser.
+          </p>
+        </div>
+      </div>
+
+      <div class="Box">
+        <div class="lessonArticle">
+          <h1>Before you go: p tags</h1>
+
+          <?prettify linenums=7?>
+          <pre class="prettyprint">
+              &ltbody&gt
+                &ltp&gt
+                  This is where the fun begins
+                &lt/p&gt
+              &lt/body&gt
+              &lt/html&gt
+          </pre>
+
+          <p>
+            Since I believe in you, I am gonna tell you about one more tag. the
+            p or the <strong>paragraph</strong> tag. It is good practice to put
+            your text inside the p tag, as I have above. We will be looking at
+            more tags and ways to break up our information in future lessons.
+          </p>
+        </div>
+      </div>
+
+      <br />
+      <br />
+    </div>
+
+    <footer class="footer">
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+    </footer>
+  </body>
+</html>
