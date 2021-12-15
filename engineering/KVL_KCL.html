@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta name="description" content="circuit analysis" />
+    <title>circuit analysis</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../leonardoprofessionalCSS/lessonStyle.css"
+    />
+  </head>
+  <body>
+    <div class="Header">
+      <img
+        src="../leonardoprofessionalPictures/logo.PNG"
+        alt="logo"
+        style="width: 300px; height: 75px"
+      />
+      <div>
+        <a class="navButton" href="../index.html"><b>home</b></a>
+      </div>
+      <div>
+        <a class="navButton" href="../math.html"><b> math </b></a>
+      </div>
+      <div>
+        <a class="navButton" href="../engineering.html"><b> engineering </b></a>
+      </div>
+      <div>
+        <a class="navButton" href="../coding.html"><b> coding </b></a>
+      </div>
+      <div>
+        <button class="btn-primary">
+          <a href="#"><b> contact me </b></a>
+        </button>
+      </div>
+    </div>
+
+    <div class="mainPage">
+      <h1>KVL and KCL</h1>
+
+      <div class="Box">
+        <div class="lessonArticle">
+          <h1>what is a node</h1>
+
+          <img
+            alt="circuit nodes"
+            src="../leonardoprofessionalPictures/nodeColorCode.PNG"
+          />
+
+          <p>
+            A node is the area in a circuit between elements. Above is a circuit
+            with the wires color coded so that each color is its own node. There
+            are four nodes shown, try to pick out their colors.
+          </p>
+        </div>
+      </div>
+
+      <div class="Box">
+        <div class="lessonArticle">
+          <h1>representing nodes and currents</h1>
+
+          <img
+            alt="circuit nodes"
+            src="../leonardoprofessionalPictures/nodeSchematic.PNG"
+          />
+
+          <p>
+            Here I am representing the same schematic in our usual format.
+            However, I have added green circles to represent nodes. Currents are
+            also being displayed with an arrow and the letter I.
+          </p>
+        </div>
+      </div>
+
+      <div class="blogBoxB">
+        <div class="lessonArticle">
+          <h1>KCL: Kirchhoff's current law</h1>
+
+          <img
+            alt="circuit nodes"
+            src="../leonardoprofessionalPictures/nodeKCL.PNG"
+          />
+
+          <p>
+            giving the example above some values, we can see three currents
+            going "into" a node.
+          </p>
+          <p>
+            <strong>Kirchhoff's current law</strong> states that all the
+            currents going into a node equal zero
+          </p>
+          <p>in this case I1 + I2 + I3 = 0</p>
+        </div>
+        <div class="detail">
+          <h3>Solution</h3>
+
+          <p>plugging into I1 + I2 + I3 = 0</p>
+          <p>we get 1 + (-2) + I3 = 0</p>
+          <p>we easily find I3 = 1 Amp</p>
+          <p>
+            note* since I2 is negative you might see the arrow turned away from
+            the node
+          </p>
+        </div>
+      </div>
+
+      <div class="blogBoxB">
+        <div class="lessonArticle">
+          <h1>KCL question</h1>
+
+          <img
+            alt="circuit nodes"
+            src="../leonardoprofessionalPictures/KCLQuestion.PNG"
+          />
+
+          <p>
+            looking at this example lets notice how the current source is
+            represented with an arrow. In these examples you can assume a
+            current source to mean the same as an arrow.
+          </p>
+          <p>
+            first lets look at node A. we see three currents interacting with
+            the node. again in this case I1 + I2 + I3 = 0
+          </p>
+          <p></p>
+        </div>
+        <div class="detail">
+          <h3>Solution</h3>
+
+          <p>plugging into I1 + I2 + I3 = 0</p>
+          <p>we get 1 + (-2) + I3 = 0</p>
+          <p>we easily find I3 = 1 Amp</p>
+          <p>
+            note* since I2 is negative you might see the arrow turned away from
+            the node
+          </p>
+        </div>
+      </div>
+
+      <div class="blogBoxB">
+        <div class="lessonArticle">
+          <h1>Not so fast</h1>
+
+          <p>
+            That was all fine and dandy with the magical arrows telling us all
+            the currents we needed to know. What if we get a circuit with more
+            unknowns?
+          </p>
+          <p>
+            first lets look at node A. we see three currents interacting with
+            the node. again in this case I1 + I2 + I3 = 0
+          </p>
+          <p></p>
+        </div>
+        <div class="detail">
+          <h3>Solution</h3>
+
+          <img
+            alt="circuit nodes"
+            src="../leonardoprofessionalPictures/ground.PNG"
+          />
+        </div>
+      </div>
+      <br />
+      <br />
+    </div>
+
+    <footer class="footer">
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+    </footer>
+  </body>
+</html>
